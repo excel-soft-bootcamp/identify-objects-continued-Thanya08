@@ -1,4 +1,5 @@
 State Management Types:
+
 1.Client-Side State Management      2.Server-Side State Management
 
 1.Client-Side State Management :-The state related information will directly get stored on the Client side.That specific information will travel back and communicate with every request
