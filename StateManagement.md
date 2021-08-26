@@ -35,6 +35,6 @@ Server-Side State Management techniques are:
 It stores information as a Dictionary Collection in key - value pairs. This value is accessible across the pages of the application / website.
 There are 3 events of the Application which are as follows
 
--Application_Start
--Application_Error
--Application_End
+- Application_Start
+- Application_Error
+- Application_End
