@@ -34,6 +34,7 @@ Server-Side State Management techniques are:
  - Application State :If the information that we want to be accessed or stored globally throughout the application, even if multiple users access the site or application at the same time, then we can use an Application Object for such purposes.
 It stores information as a Dictionary Collection in key - value pairs. This value is accessible across the pages of the application / website.
 There are 3 events of the Application which are as follows
+
 -Application_Start
 -Application_Error
 -Application_End
