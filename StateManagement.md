@@ -17,7 +17,7 @@ Cookies having an expiration date is called a persistent cookie. This type of co
  
 Non-persistent types of cookies aren't stored in the client's hard drive permanently. It maintains user information as long as the user access or uses the services. Its simply the opposite procedure of a persistent cookie.
 
-- Control State: Control state is based on the custom control option. For expected results from CONTROL STATE we need to enable the property of view state. As I already described you can manually change those settings.
+- Control State: Control state is based on the custom control option. For expected results from CONTROL STATE we need to enable the property of view state. 
 
 - Query strings: Query strings are used for some specific purpose. These in a general case are used for holding some value from a different page and move these values to the different page. The information stored in it can be easily navigated to one page to another or to the same page as well.
 
