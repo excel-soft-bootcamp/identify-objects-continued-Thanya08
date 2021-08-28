@@ -9,9 +9,16 @@ protected void Button1_Click(object sender, EventArgs e)<br>{<br>
 }
 
 * Response.Redirect(string url) issues a 302 HTTP status code instructing the client to redirect to url. The browser will issue a new request for url and the URL will change in the address bar.
+* Allows both Absolute URL and Relative URL.
+* The code present after Response.Redirect will not be executed.
+*  In Response.Redirect source and destination pages can be present in same website or different website.
+* Rsponse.Redirect() takes 2 arguments URL(Mandatory) and EndResponse(Optional).
 
 ### 2. server.Transfer():
 terminates execution of the current page and starts execution of a new page on the specified path i.e. internally within IIS. Therefore the URL in the browser address bar will not be changed. The page you transfer to must be an aspx page in the same web site.
+* Server.Transfer allows only relative URL.
+* The code present after Server.Transfer will not be executed.
+* In Server.Transfer source and destination pages must be present in same website .
 
  Use Response.Redirect if the URL has changed and future visits to the content should be on the new URL. Use Server.Transfer if the URL is correct and current but you need to display different content this one time - maybe you are displaying an error message or you need the user to enter their credentials to continue or there is some other reason why the content should change but the URL should not.
 
@@ -29,9 +36,9 @@ Both Response.Redirect and Server.Transfer methods are used to transfer a user f
 The Response.Redirect method redirects a request to a new URL and specifies the new URL while the Server.Transfer method for the current request, terminates execution of the current page and starts execution of a new page using the specified URL path of the page.
 
 ### 3.Server.Execute():<br>
-Server.Execute allows only relative URL.
-The code present after Server.Execute() will  be executed.
-In Server.Execute source and destination pages must be present in same website .
+* Server.Execute allows only relative URL.
+* The code present after Server.Execute() will  be executed.
+* In Server.Execute source and destination pages must be present in same website .
              
  protected void Button1_Click(object sender, EventArgs e) <br>{<br>
     Server.Execute("Webform2.aspx");<br>
