@@ -43,3 +43,10 @@ Whenever we design a form where we take input from user there may be a chance th
  
 - Validation Summary: The Validation Summary control is used to display the summary of all validation errors in a web page. 
 
+
+## User-Controls in ASP.NET
+
+- Behaves like miniature ASP.NET pages or web forms, which could be used by many other pages.
+- Have an .ascx extension
+- Does not have standard html tags.
+- They have control directive instead of page directive.
