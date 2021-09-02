@@ -7,5 +7,12 @@ Types of Caching:
 - Output caching:<br>
  Output cache stores a copy of the finally rendered HTML pages or part of pages sent to the client. When the next client requests for this page, instead of regenerating the page, a cached copy of the page is sent, thus saving time.<br>
 <%@ OutputCache Duration = "10" VaryByParam = "None" %> <br>
+- Duration Attribute
+
+This attributes represents the time in seconds of how long the output cache should be stored in memory. After the defined duration the content stored in the memory will be cleared automatically.
+
+- VarByParam Attribute
+
+This is the most important attributes; you can't afford to miss that in the OutputCache directory statement. It generally defines the query string parameters to vary the cache (in memory).
 - Fragment Caching:<br>
 In some scenarios we only need to cache only a segment of a page. For example a contact us page in a main page will be the same for all the users and for that there is no need to cache the entire page.
